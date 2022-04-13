@@ -32,7 +32,6 @@ def finches_detail(request, finch_id):
 class FinchCreate(CreateView):
   model = Finch
   fields = ['name', 'type', 'description', 'age']
-  fields = '__all__'
 
 class FinchUpdate(UpdateView):
   model = Finch
